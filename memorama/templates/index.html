@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static%}
+<nav class="mind">
+    <a>MIND 4.0</a>
+</nav>
+<nav class="navegacion">
+    <ul class="menu">
+        <li><a><b>Inicio</b></a>
+            <ul class="submenu">
+                <li><a>12345</a></li>
+            </ul>
+        </li>
+        <li><a><b>Juego</b></a>
+            <ul class="submenu">
+                <li><a>12345</a></li>
+            </ul>
+        </li>
+        <li><a><b>Informacion</b></a>
+            <ul class="submenu">
+                <li><a>12345</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<center>
+    <div class="materia">
+        <div class="detalles">
+            <h1 class="texto">¡Bienvenido a MIND 4.0!</h1>
+            <a>El juego de memoria que te sumerge en el futuro de la industria! </a>
+            <br><br>
+            <a>Descubre la revolución de la Industria 4.0.
+                Desafía tu mente y expande tus conocimientos mientras juegas.
+                ¿Estás listo para dominar la Industria 4.0? ¡Únete a nosotros en Mind 4.0 y
+                haz historia en el juego que redefine la forma en que aprendemos sobre el
+                futuro del trabajo y la tecnología!</a>
+        </div>
+        <div class="detalles">
+            <img src="{% static 'img/logo.jpeg' %}" width="350" height="350">
+        </div>
+    </div>
+</center>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block cssfiles%}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/game.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+        
+        <section class="memory-game">
+            {% for pair in card_pair_list %}
+            
+            <div class="memory-card" data-concept="{{pair.concept}}">
+                <img class="front-face" src="{{pair.image.url}}" alt="FRONT-FACE">
+                <img class="back-face" src="{% static 'img/logo.jpeg' %}" alt="BACK-FACE">
+            </div>
+            <div class="memory-card" data-concept="{{pair.concept}}">
+                <img class="front-face" src="{{pair.image.url}}" alt="FRONT-FACE">
+                <img class="back-face" src="{% static 'img/logo.jpeg' %}" alt="BACK-FACE">
+            </div>
+    
+            {% endfor %}
+    
+
+        </section>
+      
+<script src="{% static 'js/game.js'%}">
+</script>
+{% endblock %}

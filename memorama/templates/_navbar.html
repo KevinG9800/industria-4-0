@@ -5,18 +5,14 @@
     <nav class="navegacion">
         <ul class="menu">
             <li><a href="{% url 'index' %}"><b>Inicio</b></a>
-                <ul class="submenu">
-                    <li><a>12345</a></li>
-                </ul>
             </li>
             <li><a  href="{% url 'game' %}"><b>Juego</b></a>
-                <ul class="submenu">
-                    <li><a>12345</a></li>
-                </ul>
             </li>
             <li><a  href="{% url 'info' %}"><b>Informacion</b></a>
                 <ul class="submenu">
-                    <li><a>12345</a></li>
+                    <li><a href="{% url 'ciberseguridad' %}">Ciberseguridad</a></li>
+                    <li><a href="{% url 'inteligenciaartificial' %}">Inteligencia artificial</a></li>
+                    <li><a href="{% url 'electromovilidad' %}">Electromovilidad</a></li>
                 </ul>
             </li>
         </ul>

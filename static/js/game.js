@@ -11,25 +11,27 @@ function flipCard() {
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
-    // first click
+    // First Click
     hasFlippedCard = true;
     firstCard = this;
 
     return;
   }
 
-  // second click
+  // Second Click
   secondCard = this;
 
   checkForMatch();
 }
 
+// This function check for a card match using the data set stocked in on the HTML elements
 function checkForMatch() {
   let isMatch = firstCard.dataset.concept === secondCard.dataset.concept;
 
   isMatch ? disableCards() : unflipCards();
 }
 
+// Disables the user to click again the cards already clicked
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
@@ -37,6 +39,7 @@ function disableCards() {
   resetBoard();
 }
 
+// Locks the position of the cards that matched
 function unflipCards() {
   lockBoard = true;
 
@@ -45,9 +48,10 @@ function unflipCards() {
     secondCard.classList.remove('flip');
 
     resetBoard();
-  }, 1500);
+  }, 2500);
 }
 
+// Resets all the dynamic variables involved in the game
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];

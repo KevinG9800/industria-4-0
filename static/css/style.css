@@ -81,10 +81,29 @@ body {
 }
 
 .detalles {
-    width: 500px;
+    width: 40%;
     font-family: "Irish Grover";
     color: white;
     margin: 3em auto 0 5em;
     font-size: 20px;
 }
 
+
+.contenido {
+    width: 70%;
+    display: block;
+    color: white;
+    text-align: justify;
+    padding: 5%;
+}
+
+.contenido>h1 {
+    font-weight: 800;
+}
+.contenido>h2 {
+    font-weight: 700;
+}
+
+.contenido>li {
+    margin-left: 5%;
+}

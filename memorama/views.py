@@ -21,3 +21,12 @@ def game(request):
 
 def info(request):
     return render(request, 'info.html')
+
+def ciberseguridad(request):
+    return render(request, 'ciberseguridad.html')
+
+def inteligenciaartificial(request):
+    return render(request, 'inteligenciaartificial.html')
+
+def electromovilidad(request):
+    return render(request, 'electromovilidad.html')

@@ -13,11 +13,16 @@
             {% for pair in card_pair_list %}
             
             <div class="memory-card" data-concept="{{pair.concept}}">
-                <img class="front-face" src="{{pair.image.url}}" alt="FRONT-FACE">
+                <div class="front-face">
+                    <p class="paragraph">{{pair.definition}}</p>
+                </div>
                 <img class="back-face" src="{% static 'img/logo.jpeg' %}" alt="BACK-FACE">
             </div>
             <div class="memory-card" data-concept="{{pair.concept}}">
-                <img class="front-face" src="{{pair.image.url}}" alt="FRONT-FACE">
+                <div class="front-face">
+                    <img class="img" src="{{pair.image.url}}" alt="{{pair.concept}}">
+                    <p class="concept">{{pair.concept}}</p>
+                </div>
                 <img class="back-face" src="{% static 'img/logo.jpeg' %}" alt="BACK-FACE">
             </div>
     

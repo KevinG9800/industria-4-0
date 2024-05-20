@@ -4,27 +4,27 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-	perspective: 1000px;
+    perspective: 1000px;
 }
 
 .memory-card {
-    width: calc(25% - 10px);
-    height: calc(25% - 10px);
+    width: calc(20% - 10px);
+    height: calc(20% - 10px);
     margin: 5px;
     position: relative;
     transform: scale(1);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-	transform-style: preserve-3d;
-	transition: transform 1s;
+    transform-style: preserve-3d;
+    transition: transform 1s;
 }
 
 .memory-card:active {
     transform: scale(0.97);
-    transition: transform 0.2s;
+    transition: transform 1s;
 }
 
-.memory-card.flip{
-	transform: rotateY(180deg);
+.memory-card.flip {
+    transform: rotateY(180deg);
 }
 
 .front-face,
@@ -35,20 +35,20 @@
     position: absolute;
     border-radius: 5px;
     background: #1c7ccc;
-	backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .front-face {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-.paragraph  {
-    font-size: 10;
+.paragraph {
+    font-size: 12px;
     text-align: center;
 }
 
 .concept {
-    font-size: 40;
+    font-size: 15px;
     font-weight: 1000;
     text-align: center;
 }
@@ -59,4 +59,70 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .memory-game {
+        width: 600px;
+        height: 600px;
+    }
+
+    .memory-card {
+        width: calc(33.33% - 10px);
+        height: calc(33.33% - 10px);
+    }
+
+    .concept {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .memory-game {
+        width: 400px;
+        height: 400px;
+    }
+
+    .memory-card {
+        width: calc(50% - 10px);
+        height: calc(50% - 10px);
+    }
+
+    .concept {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .memory-game {
+        width: 300px;
+        height: 300px;
+    }
+
+    .memory-card {
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        margin: 2.5px;
+    }
+
+    .concept {
+        font-size: 15px;
+    }
+}
+
+/* GAME */
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
 }

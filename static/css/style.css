@@ -1,6 +1,8 @@
 body {
     background-color: #042440;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .mind {
@@ -16,6 +18,7 @@ body {
 }
 
 .navegacion {
+    width: 100%;
     background-color: #a2bedc;
     padding: 10px 20px;
     text-align: center;
@@ -23,6 +26,7 @@ body {
 
 .navegacion ul {
     list-style: none;
+    padding: 0;
 }
 
 .menu > li {
@@ -39,7 +43,7 @@ body {
     text-decoration: none;
     box-shadow: 1px 3px 5px gray;
     border-radius: 40px;
-    margin: 0 5em 0 5em;
+    margin: 0 1em;
 }
 
 .menu li a:hover {
@@ -50,22 +54,20 @@ body {
 .submenu {
     position: absolute;
     background: #333333;
-    width: 30%;
+    width: 60%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
     box-shadow: 1px 3px 5px gray;
     border-radius: 40px;
     text-align: center;
-    float: rigth;
-    margin: 0 5em 0 7em;
 }
 
 .submenu li a {
     display: block;
     color: white;
     padding: 10px;
-    font-family: Irish grover;
+    font-family: Irish Grover;
     text-decoration: none;
 }
 
@@ -84,10 +86,9 @@ body {
     width: 40%;
     font-family: "Irish Grover";
     color: white;
-    margin: 3em auto 0 5em;
+    margin: 3em auto;
     font-size: 20px;
 }
-
 
 .contenido {
     width: 70%;
@@ -97,13 +98,80 @@ body {
     padding: 5%;
 }
 
-.contenido>h1 {
+.contenido > h1 {
     font-weight: 800;
 }
-.contenido>h2 {
+
+.contenido > h2 {
     font-weight: 700;
 }
 
-.contenido>li {
+.contenido > li {
     margin-left: 5%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .menu > li > a {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    .detalles {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .contenido {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu > li > a {
+        font-size: 18px;
+        padding: 6px 15px;
+        margin: 0 0.5em;
+    }
+
+    .submenu {
+        width: 80%;
+        margin: 0 0.5em;
+    }
+
+    .detalles {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .contenido {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu > li {
+        display: block;
+        text-align: center;
+    }
+
+    .menu > li > a {
+        font-size: 16px;
+        padding: 5px 10px;
+        margin: 0.5em 0;
+    }
+
+    .submenu {
+        width: 100%;
+    }
+
+    .detalles {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .contenido {
+        width: 95%;
+        padding: 2%;
+    }
 }

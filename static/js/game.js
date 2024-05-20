@@ -1,4 +1,6 @@
 const cards = document.querySelectorAll('.memory-card');
+const totalCards = cards.length;
+let cardsFlipped = 0;
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -14,7 +16,7 @@ function flipCard() {
     // First Click
     hasFlippedCard = true;
     firstCard = this;
-
+    startGame();
     return;
   }
 
@@ -37,6 +39,12 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
 
   resetBoard();
+
+  cardsFlipped += 2;
+  console.log(cardsFlipped)
+  if (cardsFlipped === totalCards) {
+    stopTimer();
+  }
 }
 
 // Locks the position of the cards that matched
@@ -63,5 +71,38 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
+
+// TIMER FUNCIONALITY
+
+let timerInterval;
+let startTime;
+
+function startGame() {
+    if (!startTime) {
+        startTime = new Date().getTime();
+        timerInterval = setInterval(updateTimer, 10);
+    }
+}
+
+function updateTimer() {
+    const now = new Date().getTime();
+    const elapsedTime = now - startTime;
+
+    const minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+    const milliseconds = Math.floor((elapsedTime % 1000));
+
+    document.getElementById('timer').innerText =
+        `${pad(minutes)}:${pad(seconds)}.${pad(milliseconds, 3)}`;
+}
+
+function pad(number, length = 2) {
+    return number.toString().padStart(length, '0');
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
 
 cards.forEach(card => card.addEventListener('click', flipCard));

@@ -153,6 +153,7 @@ body {
     .menu > li {
         display: block;
         text-align: center;
+        margin: 20px;
     }
 
     .menu > li > a {

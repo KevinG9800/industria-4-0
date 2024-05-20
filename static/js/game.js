@@ -43,7 +43,7 @@ function disableCards() {
   cardsFlipped += 2;
   console.log(cardsFlipped)
   if (cardsFlipped === totalCards) {
-    stopTimer();
+    finishGame();
   }
 }
 
@@ -100,8 +100,10 @@ function pad(number, length = 2) {
     return number.toString().padStart(length, '0');
 }
 
-function stopTimer() {
+function finishGame() {
+  alert("Felicidades, ¡comlpetaste el juego!");
     clearInterval(timerInterval);
+    
 }
 
 

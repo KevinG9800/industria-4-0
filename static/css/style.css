@@ -50,7 +50,7 @@ body {
 .submenu {
     position: absolute;
     background: #333333;
-    width: 30%;
+    width: 60%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;

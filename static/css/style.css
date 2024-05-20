@@ -175,3 +175,37 @@ body {
         padding: 2%;
     }
 }
+label{
+    display: block;
+    padding: 4px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 1px;
+}
+
+label:hover{
+    background: #ae8cc0;
+}
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    background-color: #4c84bc ;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+button:hover{
+    background: #ae8cc0;
+    color: #fff;
+}
+
+.correcta {
+    color: green;
+}
+.incorrecta {
+    color: red;
+}

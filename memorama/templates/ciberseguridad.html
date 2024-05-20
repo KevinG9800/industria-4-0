@@ -71,75 +71,81 @@
         <h4>Mayor conciencia de la seguridad</h4>
         <p>Por último, uno de los mayores beneficios de la ciberseguridad es que los usuarios, empleados, clientes
             y hasta proveedores, pueden comenzar a tener más conciencia sobre la importancia del cuidado de la
-            seguridad digital en un mundo más conectado digitalmente.</p>
+            seguridad digital en un mundo más conectado digitalmente.</p><br>
 
 
-            <h6>Cuestionario</h6>
+            <h5>Cuestionario</h5>
 
-            <li>¿Cómo se define la ciberseguridad?<br>
-            <input type="radio" name="q1" value="A">A) Protección de la vida silvestre.<br>
-            <input type="radio" name="q1" value="A">B) Protección de sistemas informáticos, equipos, redes y datos digitales confidenciales.<br>
-            <input type="radio" name="q1" value="A">C) Protección de la privacidad en línea.<br>
-            <input type="radio" name="q1" value="A">D) Protección de la infraestructura física.<br>
-            
-            <li>¿Cuál de los siguientes no es uno de los pilares de la ciberseguridad?<br>
-            <input type="radio" name="q2" value="A">A) Confidencialidad.<br>
-            <input type="radio" name="q2" value="A">B) Integridad.<br>
-            <input type="radio" name="q2" value="A">C) Disponibilidad.<br>
-            <input type="radio" name="q2" value="A">D) Acceso.<br>
-            
-            <li>¿Cuál es el objetivo principal de la ciberseguridad?<br>
-            <input type="radio" name="q3" value="A">A) Garantizar la confidencialidad de los datos.<br>
-            <input type="radio" name="q3" value="A">B) Garantizar la integridad de los datos.<br>
-            <input type="radio" name="q3" value="A">C) Garantizar la disponibilidad de los datos.<br>
-            <input type="radio" name="q3" value="A">D) Todas las anteriores.<br>
-            
-            <li>¿Qué beneficio de la ciberseguridad ayuda a proteger la información de los usuarios a través de medidas como el uso de firewalls y encriptación?<br>
-            <input type="radio" name="q4" value="A">A) Mayor seguridad de los datos.<br>
-            <input type="radio" name="q4" value="A">B) Mejor control de acceso.<br>
-            <input type="radio" name="q4" value="A">C) Protección de la infraestructura de red.<br>
-            <input type="radio" name="q4" value="A">D) Cumplimiento de los requisitos legales.<br>
-            
-            <li>¿Qué beneficio de la ciberseguridad limita el acceso a los datos y recursos, así como el uso no autorizado de la información?<br>
-            <input type="radio" name="q5" value="A">A) Mayor seguridad de los datos.<br>
-            <input type="radio" name="q5" value="A">B) Mejor control de acceso.<br>
-            <input type="radio" name="q5" value="A">C) Protección de la infraestructura de red.<br>
-            <input type="radio" name="q5" value="A">D) Cumplimiento de los requisitos legales.<br>
-            
-            <li>¿Qué beneficio de la ciberseguridad ayuda a cumplir con los requisitos legales relacionados con la protección de datos?<br>
-            <input type="radio" name="q6" value="A">A) Cumplimiento de los requisitos legales.<br>
-            <input type="radio" name="q6" value="A">B) Confianza de los clientes.<br>
-            <input type="radio" name="q6" value="A">C) Mayor productividad del equipo.<br>
-            <input type="radio" name="q6" value="A">D) Controlar el riesgo de pérdidas financieras.<br>
-            
-            <li>¿Qué beneficio de la ciberseguridad permite a los clientes y usuarios confiar en que sus datos están seguros y protegidos por una empresa?<br>
-            <input type="radio" name="q7" value="A">A) Cumplimiento de los requisitos legales.<br>
-            <input type="radio" name="q7" value="A">B) Confianza de los clientes.<br>
-            <input type="radio" name="q7" value="A">C) Mayor productividad del equipo.<br>
-            <input type="radio" name="q7" value="A">D) Controlar el riesgo de pérdidas financieras.<br>
-            
-            <li>¿Qué beneficio de la ciberseguridad permite a los equipos trabajar de forma más eficiente y segura?<br>
-            <input type="radio" name="q8" value="A">A) Mayor seguridad de los datos.<br>
-            <input type="radio" name="q8" value="A">B) Mejor control de acceso.<br>
-            <input type="radio" name="q8" value="A">C) Mayor productividad del equipo.<br>
-            <input type="radio" name="q8" value="A">D) Controlar el riesgo de pérdidas financieras.<br>
+        <ol>
+            <li id="p1">¿Cómo se define la ciberseguridad?<br>
+                <label><input type="radio" name="q1" value="0" onclick="respuesta(0, this)"> A) Protección de la vida silvestre.</label><br>
+                <label><input type="radio" name="q1" value="1" onclick="respuesta(0, this)"> B) Protección de sistemas informáticos, equipos, redes y datos digitales confidenciales.</label><br>
+                <label><input type="radio" name="q1" value="2" onclick="respuesta(0, this)"> C) Protección de la privacidad en línea.</label><br>
+                <label><input type="radio" name="q1" value="3" onclick="respuesta(0, this)"> D) Protección de la infraestructura física.</label><br>
+            </li>
+            <li id="p2">¿Cuál de los siguientes no es uno de los pilares de la ciberseguridad?<br>
+                <label><input type="radio" name="q2" value="0" onclick="respuesta(1, this)"> A) Confidencialidad.</label><br>
+                <label><input type="radio" name="q2" value="1" onclick="respuesta(1, this)"> B) Integridad.</label><br>
+                <label><input type="radio" name="q2" value="2" onclick="respuesta(1, this)"> C) Disponibilidad.</label><br>
+                <label><input type="radio" name="q2" value="3" onclick="respuesta(1, this)"> D) Acceso.</label><br>
+            </li>
+            <li id="p3">¿Cuál es el objetivo principal de la ciberseguridad?<br>
+                <label><input type="radio" name="q3" value="0" onclick="respuesta(2, this)"> A) Garantizar la confidencialidad de los datos.</label><br>
+                <label><input type="radio" name="q3" value="1" onclick="respuesta(2, this)"> B) Garantizar la integridad de los datos.</label><br>
+                <label><input type="radio" name="q3" value="2" onclick="respuesta(2, this)"> C) Garantizar la disponibilidad de los datos.</label><br>
+                <label><input type="radio" name="q3" value="3" onclick="respuesta(2, this)"> D) Todas las anteriores.</label><br>
+            </li>
+            <li id="p4">¿Qué beneficio de la ciberseguridad ayuda a proteger la información de los usuarios a través de medidas como el uso de firewalls y encriptación?<br>
+                <label><input type="radio" name="q4" value="0" onclick="respuesta(3, this)"> A) Mayor seguridad de los datos.</label><br>
+                <label><input type="radio" name="q4" value="1" onclick="respuesta(3, this)"> B) Mejor control de acceso.</label><br>
+                <label><input type="radio" name="q4" value="2" onclick="respuesta(3, this)"> C) Protección de la infraestructura de red.</label><br>
+                <label><input type="radio" name="q4" value="3" onclick="respuesta(3, this)"> D) Cumplimiento de los requisitos legales.</label><br>
+            </li>
+            <li id="p5">¿Qué beneficio de la ciberseguridad limita el acceso a los datos y recursos, así como el uso no autorizado de la información?<br>
+                <label><input type="radio" name="q5" value="0" onclick="respuesta(4, this)"> A) Mayor seguridad de los datos.</label><br>
+                <label><input type="radio" name="q5" value="1" onclick="respuesta(4, this)"> B) Mejor control de acceso.</label><br>
+                <label><input type="radio" name="q5" value="2" onclick="respuesta(4, this)"> C) Protección de la infraestructura de red.</label><br>
+                <label><input type="radio" name="q5" value="3" onclick="respuesta(4, this)"> D) Cumplimiento de los requisitos legales.</label><br>
+            </li>
+            <li id="p6">¿Qué beneficio de la ciberseguridad ayuda a cumplir con los requisitos legales relacionados con la protección de datos?<br>
+                <label><input type="radio" name="q6" value="0" onclick="respuesta(5, this)"> A) Cumplimiento de los requisitos legales.</label><br>
+                <label><input type="radio" name="q6" value="1" onclick="respuesta(5, this)"> B) Confianza de los clientes.</label><br>
+                <label><input type="radio" name="q6" value="2" onclick="respuesta(5, this)"> C) Mayor productividad del equipo.</label><br>
+                <label><input type="radio" name="q6" value="3" onclick="respuesta(5, this)"> D) Controlar el riesgo de pérdidas financieras.</label><br>
+            </li>
+            <li id="p7">¿Qué beneficio de la ciberseguridad permite a los clientes y usuarios confiar en que sus datos están seguros y protegidos por una empresa?<br>
+                <label><input type="radio" name="q7" value="0" onclick="respuesta(6, this)"> A) Cumplimiento de los requisitos legales.</label><br>
+                <label><input type="radio" name="q7" value="1" onclick="respuesta(6, this)"> B) Confianza de los clientes.</label><br>
+                <label><input type="radio" name="q7" value="2" onclick="respuesta(6, this)"> C) Mayor productividad del equipo.</label><br>
+                <label><input type="radio" name="q7" value="3" onclick="respuesta(6, this)"> D) Controlar el riesgo de pérdidas financieras.</label><br>
+            </li>
+            <li id="p8">¿Qué beneficio de la ciberseguridad permite a los equipos trabajar de forma más eficiente y segura?<br>
+                <label><input type="radio" name="q8" value="0" onclick="respuesta(7, this)"> A) Mayor seguridad de los datos.</label><br>
+                <label><input type="radio" name="q8" value="1" onclick="respuesta(7, this)"> B) Mejor control de acceso.</label><br>
+                <label><input type="radio" name="q8" value="2" onclick="respuesta(7, this)"> C) Mayor productividad del equipo.</label><br>
+                <label><input type="radio" name="q8" value="3" onclick="respuesta(7, this)"> D) Controlar el riesgo de pérdidas financieras.</label><br>
+            </li>
+            <li id="p9">¿Cuál es uno de los beneficios de la ciberseguridad en términos de controlar el riesgo de pérdidas financieras?<br>
+                <label><input type="radio" name="q9" value="0" onclick="respuesta(8, this)"> A) Mayor seguridad de los datos.</label><br>
+                <label><input type="radio" name="q9" value="1" onclick="respuesta(8, this)"> B) Protección de la infraestructura de red.</label><br>
+                <label><input type="radio" name="q9" value="2" onclick="respuesta(8, this)"> C) Controlar el riesgo de pérdidas financieras.</label><br>
+                <label><input type="radio" name="q9" value="3" onclick="respuesta(8, this)"> D) Mejor coincidencia de la seguridad.</label><br>
+            </li>
+            <li id="p10">¿Cuál es uno de los beneficios de la ciberseguridad en términos de conciencia sobre la importancia del cuidado de la seguridad digital?<br>
+                <label><input type="radio" name="q10" value="0" onclick="respuesta(9, this)"> A) Mayor seguridad de los datos.</label><br>
+                <label><input type="radio" name="q10" value="1" onclick="respuesta(9, this)"> B) Mejor coincidencia de la seguridad.</label><br>
+                <label><input type="radio" name="q10" value="2" onclick="respuesta(9, this)"> C) Controlar el riesgo de pérdidas financieras.</label><br>
+                <label><input type="radio" name="q10" value="3" onclick="respuesta(9, this)"> D) Cumplimiento de los requisitos legales.</label><br>
+            </li>
+        </ol>
 
-            <li>¿Cuál es uno de los beneficios de la ciberseguridad en términos de controlar el riesgo de pérdidas financieras?<br>
-            <input type="radio" name="q9" value="A">A) Mayor seguridad de los datos.<br>
-            <input type="radio" name="q9" value="A">B) Protección de la infraestructura de red.<br>
-            <input type="radio" name="q9" value="A">C) Controlar el riesgo de pérdidas financieras.<br>
-            <input type="radio" name="q9" value="A">D) Mejor coincidencia de la seguridad.<br>
-            
-            <li>¿Cuál es uno de los beneficios de la ciberseguridad en términos de conciencia sobre la importancia del cuidado de la seguridad digital?<br>
-            <input type="radio" name="q10" value="A">A) Mayor seguridad de los datos.<br>
-            <input type="radio" name="q10" value="A">B) Mejor coincidencia de la seguridad.<br>
-            <input type="radio" name="q10" value="A">C) Controlar el riesgo de pérdidas financieras.<br>
-            <input type="radio" name="q10" value="A">D) Cumplimiento de los requisitos legales.<br>
-
-
-        </a>
+        <button onclick="corregir_ciber()">Enviar</button>
+        <br>
+        <h4 align="center">Cantidad de Aciertos: <span id="resultado_ciber"> </span></h4>
+        {% load static %}
+        <script src="{% static 'js/script.js'%}">
+        </script>
     </div>
 
 </center>
-
 {% endblock %}
